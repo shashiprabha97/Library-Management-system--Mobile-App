@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@color/top_header_bleack">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:text="Helakuru "
+                android:fontFamily="@font/lobster"
+                android:textSize="25dp"
+                android:textColor="@color/background"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Library"
+                android:fontFamily="@font/popping"
+                android:textSize="30dp"
+                android:textColor="@color/aple_green"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="First Name"
+                android:textColorHint="@color/background"
+                android:background="@color/text_edit"
+                android:padding="5dp"
+                android:textColor="@color/background"
+                />
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Last Name"
+                android:textColorHint="@color/background"
+                android:background="@color/text_edit"
+                android:padding="5dp"
+                android:textColor="@color/background"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="Username"
+            android:drawableLeft="@drawable/username"
+            android:drawablePadding="5dp"
+            android:textColorHint="@color/background"
+            android:background="@color/text_edit"
+            android:padding="7dp"
+            android:textColor="@color/background"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="Password"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="5dp"
+            android:textColorHint="@color/background"
+            android:background="@color/text_edit"
+            android:padding="7dp"
+            android:inputType="textPassword"
+            android:textColor="@color/background"/>
+        <EditText
+            android:id="@+id/password_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="Password Confirm"
+            android:textColorHint="@color/background"
+            android:background="@color/text_edit"
+            android:padding="7dp"
+            android:inputType="textPassword"
+            android:textColor="@color/background"/>
+        <TextView
+            android:id="@+id/password_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="13dp"
+            android:textColor="@color/error"
+            android:text="Passwords are not matched"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select uset type"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/aple_green"
+            />
+        <RadioGroup
+            android:id="@+id/radio_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radio_sl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/srilanka"
+                android:checked="false"
+                android:textColor="@color/background"
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_foreign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foreign"
+                android:checked="false"
+                android:textColor="@color/background"/>
+
+        </RadioGroup>
+        <EditText
+            android:id="@+id/nic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="NIC Number"
+            android:textColorHint="@color/background"
+            android:drawableLeft="@drawable/atachment"
+            android:drawablePadding="5dp"
+            android:background="@color/text_edit"
+            android:padding="7dp"
+            android:textColor="@color/background"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="District"
+            android:textColorHint="@color/background"
+            android:background="@color/text_edit"
+            android:padding="7dp"
+            android:textColor="@color/background"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="Country Code"
+            android:textColorHint="@color/background"
+            android:drawableLeft="@drawable/atachment"
+            android:drawablePadding="5dp"
+            android:background="@color/text_edit"
+            android:padding="7dp"
+            android:textColor="@color/background"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/passport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="Passport ID"
+            android:textColorHint="@color/background"
+            android:background="@color/text_edit"
+            android:padding="7dp"
+            android:textColor="@color/background"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:cardCornerRadius="4dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/aple_green"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:padding="15dp"
+                android:background="@color/aple_green"
+                android:textColor="@color/background"
+                android:textSize="18dp"
+                android:text="SIGN UP"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

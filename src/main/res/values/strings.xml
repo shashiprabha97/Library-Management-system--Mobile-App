@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Helakuru Library</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="logout">Log Out</string>
+    <string-array name="readings_type">
+        <item>Books</item>
+        <item>Magazine</item>
+        <item>Newspaper</item>
+        <item>Gov Publish</item>
+        <item>Olaleaf</item>
+    </string-array>
+    <string-array name="seatch_type">
+        <item>Category</item>
+        <item>Title</item>
+        <item>Year</item>
+        <item>Language</item>
+    </string-array>
+    <string name="srilanka">SRI LANKA</string>
+    <string name="foreign">FOREIGNER</string>
+</resources>

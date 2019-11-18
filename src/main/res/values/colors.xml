@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#CCC</color>
+    <color name="textRest">#808B96</color>
+    <color name="pink">#F95C73</color>
+    <color name="header_black">#1B1B1B</color>
+    <color name="top_header_bleack">#343434</color>
+    <color name="dark_blue">#101D38</color>
+    <color name="two">#053F7B</color>
+    <color name="hint_color">#A7A7A7</color>
+    <color name="error">#D65757</color>
+    <color name="read_title">#3B75B8</color>
+    <color name="text_optional">#565656</color>
+    <color name="aple_green">#099966</color>
+    <color name="text_edit">#454545</color>
+    <color name="error_text">#E33F3F</color>
+</resources>

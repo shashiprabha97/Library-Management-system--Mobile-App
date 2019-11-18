@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedReading"
+    android:background="@color/background"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/book" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Title:"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/read_title"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/bio_rythm_expander"
+                    />
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:textSize="18dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/popping"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="ID: "
+                    android:textSize="15dp"
+                    android:paddingLeft="50dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/top_header_bleack"
+                    android:fontFamily="@font/popping"
+                    />
+                <TextView
+                    android:id="@+id/readings_id"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Category: "
+                    android:textSize="15dp"
+                    android:paddingLeft="50dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/top_header_bleack"
+                    android:fontFamily="@font/popping"
+                    />
+                <TextView
+                    android:id="@+id/category"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dp"
+                >
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Language: "
+                    android:textSize="15dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:paddingLeft="40dp"
+                    android:fontFamily="@font/popping"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/language"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Year: "
+                    android:textSize="15dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:paddingLeft="40dp"
+                    android:fontFamily="@font/popping"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/year"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="State: "
+                    android:textSize="15dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:paddingLeft="40dp"
+                    android:fontFamily="@font/popping"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/state"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/publisher_visible"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="publisher: "
+                    android:textSize="15dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:paddingLeft="40dp"
+                    android:fontFamily="@font/popping"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/publisher"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="Institute for Scientific Co-operation"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/isbn_visible"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="ISBN: "
+                    android:textSize="15dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:paddingLeft="40dp"
+                    android:fontFamily="@font/popping"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/isbn"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="0024-47734-5"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/price_visible"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/head_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="price(Rs.): "
+                    android:textSize="15dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:paddingLeft="40dp"
+                    android:fontFamily="@font/popping"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/price"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="2500.00"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/author_visible"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Authors: "
+                    android:textSize="15dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:paddingLeft="40dp"
+                    android:fontFamily="@font/popping"
+                    android:textStyle="bold"
+                    />
+                <ListView
+                    android:id="@+id/author"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/issued_date_visible"
+                android:visibility="gone"
+                >
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Issued Date: "
+                    android:textSize="15dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:paddingLeft="40dp"
+                    android:fontFamily="@font/popping"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/issued_date"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="2015-03-25"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/ruled_king_visible"
+                android:visibility="gone"
+                >
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Ruled King: "
+                    android:textSize="15dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:paddingLeft="40dp"
+                    android:fontFamily="@font/popping"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/ruled_king"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="2015-03-25"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/year_range_visible"
+                android:visibility="gone"
+                >
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Year Range: "
+                    android:textSize="15dp"
+                    android:textColor="@color/top_header_bleack"
+                    android:paddingLeft="40dp"
+                    android:fontFamily="@font/popping"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/year_range"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="1800-1900"
+                    android:textSize="15dp"
+                    android:textColor="@color/text_optional"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
